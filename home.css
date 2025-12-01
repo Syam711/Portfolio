@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+hr{
+    opacity: 0.2;
+}
+
+nav{
+    height: 40px;
+    width: 96%;
+    display: flex;
+    align-items: center;
+    padding: 20px 2%;
+    background-color: #0c1327;
+}
+
+nav > div:nth-child(1){
+    width: 50%;
+    font-size: 30px;
+}
+
+nav > div:nth-child(1)>a{
+    background-image: linear-gradient(90deg, rgb(58, 130, 247), greenyellow);
+    color: transparent;
+    background-clip: text;
+}
+
+nav>div{
+    margin: 0px 20px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+nav>div>a:hover{
+    background-image: linear-gradient(90deg, greenyellow,rgb(58, 130, 247));
+    color: transparent;
+    background-clip: text;
+}
+
+aside{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    top: 80%;
+}
+
+aside>a{
+    color: black;
+    margin: 10px;
+}
+
+.outer{
+    background-image: radial-gradient(125% 125% at 50% 0%, rgb(2, 6, 23) 50%, rgb(216, 86, 140));
+    height: fit-content;
+    margin: 0px;
+}
+
+.main{
+    margin: 0px 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    padding-bottom: 150px;
+}
+
+.main>p:first-child{
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.main>p:nth-child(2){
+    font-size: 50px;
+    font-weight: bolder;
+    background-image: linear-gradient(90deg, blue, greenyellow);
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.main>p:nth-child(3){
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0;
+    max-width: 550px;
+    color: whitesmoke;
+    line-height: 25px;
+}
+
+.main-p{
+    margin: 30px;
+    max-width: 500px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.v-p{
+    padding: 10px 20px;
+    margin: 10px 20px;
+    background-image: linear-gradient(45deg, rgb(93, 254, 82), rgb(75, 164, 253));
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    transition: 1s ease;
+}
+
+.v-p:hover{
+    background-image: linear-gradient(45deg, rgb(75, 164, 253), rgb(93, 254, 82));
+}
+
+.v-c{
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: white;
+    transition: 0.25s ease;
+}
+
+.v-c>a{
+    color: black;
+}
+
+.v-c:hover{
+    transform: scale(1.05);
+    border-color: white;
+}
+
+.main-l{
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.main-l>a{
+    margin: 0px 10px;
+}
+
+#about, #projects, #experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.underline{
+    height: 5px;
+    width: 100px;
+    background-image: linear-gradient(45deg, rgb(93, 254, 82), rgb(75, 164, 253));
+    border-radius: 50px;
+    margin: 0;
+}
+
+.me{
+    display: flex;
+    align-items: center;
+    margin: 40px 0px;
+}
+
+.des{
+    max-width: 500px;
+    height: auto;
+    background-color: grey;
+    border-radius: 10px;
+    border: 1px solid rgb(58, 58, 58);
+    padding: 15px;
+    color: rgb(233, 233, 233);
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+.des>p{
+    text-align: justify;
+    line-height: 25px;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    font-size: 14px;
+}
+
+.info>.cell{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.info>.cell>p{
+    margin: 2px;
+}
+
+.info>.cell:last-child>p:last-child{
+    color: rgb(56, 255, 56);
+}
+
+#projects > .container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 40px 40px;
+    margin: 40px 0;
+}
+
+.project{
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease;
+}
+.project:hover {
+    box-shadow: 0 0 20px 0px rgb(0, 238, 255);
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+.project > .glimpse {
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    width: 427px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+.project > .glimpse > img {
+    transition: 0.5s ease;
+}
+.project > .details{
+    padding: 10px;
+    background-color: rgb(31, 42, 56);
+    color: rgb(157, 164, 176);
+    min-height: 220px;
+    max-height: 220px;
+    border-radius: 0 0 10px 10px;
+    box-sizing: border-box;
+}
+
+.project > .details > h3{
+    color: rgb(45, 212, 191);
+    margin: 0;
+}
+
+.project > .details > p{
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.skill-set{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-set > span {
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 50px;
+    background-color: rgb(55, 65, 82);
+    margin: 5px 5px;
+    color: white;
+}
+
+.project > .details .link{
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(55, 65, 82);
+    border-radius: 8px;
+    width: inherit;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.project > .details .link:hover{
+    background-color: rgb(85, 101, 127);
+}
+
+#experience > .card {
+    margin: 20px;
+    padding : 20px;
+    max-width : 350px;
+    background-color: #878b94;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 2px ridge black;
+    color: white;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.card > .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card > .details h2 {
+    margin: 1;
+}
+
+.card > .details > .duration {
+    padding: 5px 10px;
+    font-size: 11px;
+    background-color: #1e293b;
+    border-radius: 50px;
+    color: aqua;
+    font-weight: bold;
+}
